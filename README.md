@@ -1,31 +1,11 @@
 # 🎮 AI Quiz — Đố Vui Thông Minh
 
 Ứng dụng quiz giải trí với AI tự sinh câu hỏi theo chủ đề bạn chọn.
-Stack: **React (Vite)** + **Node.js (Express)** + **Claude AI**
+Stack: **React (Vite)** + **Node.js (Express)** + **gemini AI**
 
 ---
 
-## 📁 Cấu trúc
 
-```
-ai-quiz/
-├── backend/
-│   ├── server.js        # Express API server
-│   ├── .env             # API key (tạo từ .env.example)
-│   └── package.json
-└── frontend/
-    ├── src/
-    │   ├── App.jsx
-    │   ├── hooks/useQuiz.js      # Game logic
-    │   └── components/
-    │       ├── HomeScreen.jsx
-    │       ├── QuizScreen.jsx
-    │       ├── ResultScreen.jsx
-    │       └── LoadingScreen.jsx
-    └── vite.config.js
-```
-
----
 
 ## 🚀 Cài đặt & Chạy
 
@@ -37,10 +17,7 @@ npm install
 
 # Tạo file .env
 cp .env.example .env
-# Sửa .env: điền ANTHROPIC_API_KEY của bạn
-# Lấy key tại: https://console.anthropic.com
-
-npm run dev   # chạy tại http://localhost:3001
+npm run dev   # 
 ```
 
 ### 2. Frontend
@@ -48,16 +25,13 @@ npm run dev   # chạy tại http://localhost:3001
 ```bash
 cd frontend
 npm install
-npm run dev   # chạy tại http://localhost:5173
+npm run dev   # 
 ```
-
-Mở trình duyệt: **http://localhost:5173**
-
 ---
 
-## 🔑 Lấy Anthropic API Key
+## 🔑 Lấy  API Key
 
-1. Vào https://console.anthropic.com
+1. Vào https://aistudio.com
 2. Đăng ký / đăng nhập
 3. API Keys → Create Key
 4. Dán vào `backend/.env`
@@ -88,9 +62,4 @@ Mở trình duyệt: **http://localhost:5173**
 
 ---
 
-## 🔧 Mở rộng gợi ý
 
-- Thêm **leaderboard** với SQLite/MongoDB
-- Thêm **multiplayer** với Socket.io
-- Thêm **timer** đếm ngược mỗi câu
-- Thêm **categories** với hình ảnh
